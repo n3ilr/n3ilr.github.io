@@ -1,0 +1,84 @@
+@font-face {
+    font-family: myFutura;
+    src: url(FuturaBookFont.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: myFutura; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 90vh;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    line-height: 15vh;
+    font-size: 5vh; 
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.selector {
+    width: 30%;
+    background-color: paleturquoise;
+    display: inline-block;
+    user-select: none;  
+    cursor: pointer; 
+}
+
+.selector_middle {
+    border-left: solid;
+    border-right: solid;
+}
+
+.selected {
+    background-color: rgb(91, 137, 197); 
+}
+
+.rankContainer {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    font-size: 2.5vh; 
+    text-align: center;
+}
+
+.rank {
+    width: 30%;
+    display: inline-block;
+}
+
+.middle {
+    height: 50vh;
+    line-height: 50vh;
+    font-size: 8vh;   
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    height: 20vh;
+    line-height: 20vh;
+    font-size: 8vh; 
+    text-align: center;
+}
+
+.controls {
+    width: 42.5%;
+    background-color:palegreen ;
+    display: inline-block;
+    user-select: none;  
+    cursor: pointer; 
+}
+
+.buttons {
+    width:10vh; padding: 5vh;
+}
