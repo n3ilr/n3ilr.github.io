@@ -36,6 +36,6 @@ function next() {
 next()
 
 function playSound() {
-    sound.src = 'https://nextgenappsbucket.s3.amazonaws.com/words/' + curWord + '.wav'
+    sound.src = 'words/' + curWord + '.wav'
     sound.play()
 }
