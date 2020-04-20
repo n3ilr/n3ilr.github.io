@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <span class="selector selected" id="kinder" onclick="pick('kinder')">K</span>
+                <span class="selector selector_middle" id="first" onclick="pick('first')">FIRST</span>
+                <span class="selector" id="top1000" onclick="pick('top1000')">1000</span>
+            </div>
+            <div id="rankdiv" class="rankContainer" style="visibility:hidden">
+                <span class="rank">&nbsp;</span>
+                <span style="visibility: hidden" class="rank selector_middle">&nbsp;</span>
+                <span class="rank" id="rank"></span>
+            </div>           
+            <div class="middle" id="word">temperature</div>
+            <div class="bottom">
+                <span class="controls" onclick="playSound()">
+                    <img src="images/high-volume-volume-svgrepo-com.svg" class="buttons" alt="Listen to word">
+                </span>
+                <span class="controls" onclick="next()">
+                    <img src="images/next-svgrepo-com.svg" class="buttons" alt="Next word">
+                </span>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script> 
+    </body>
+</html>
